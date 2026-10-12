@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calle Sönne</title>
+</head>
+<body>
+
+<h2>Calle Sönne</h2>
+<p>Welcome to my webpage! I am currently a final year PhD student at LSGNT (London School of Geometry and Number Theory). My supervisors are George Boxer and Fred Diamond.</p>
+
+<p>You can contact me at <span id="email-container"></span>. </p>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var u = "calle.sonne";
+            var d = "ucl.ac.uk";
+            var e = u + ".23" + "@" + d;
+
+            // Creates <a href="mailto:...">...</a>
+            var link = document.createElement("a");
+            link.href = "mailto:" + e;
+            link.textContent = e;
+
+            document.getElementById("email-container").appendChild(link);
+        });
+</script>
+
+<h2>Research interests</h2>
+<p> I am interested in arithmetic geometry, the Langlands program, and the formalization of mathematics. Currently, I
+study (mod p) automorphic forms of irregular weight and their associated Galois representations. </p>
+
+<h2>Preprints</h2>
+<p> An Exotic Congruence for Irregular Weight Picard Modular Forms. <a href="exotic_congruence.pdf">[pdf]</a> </p>
+
+</body>
+</html>
